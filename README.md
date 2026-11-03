@@ -2,6 +2,25 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.10.
 
+## Icons
+
+Use Google Material Symbols for UI icons instead of inline SVGs. The
+`material-symbols` npm dependency provides the outlined font, loaded globally
+from `src/styles.scss` and bundled locally without requests to Google Fonts.
+Run `npm install` after cloning to install it along with the other dependencies.
+
+Use the icon name as text inside a `material-symbols-outlined` span:
+
+```html
+<button type="button" aria-label="Search">
+  <span class="material-symbols-outlined" aria-hidden="true">search</span>
+</button>
+```
+
+Hide decorative icons from assistive technology with `aria-hidden="true"` and
+give icon-only buttons an accessible name. Find icon names in the
+[Material Symbols catalog](https://fonts.google.com/icons).
+
 ## Development server
 
 To start a local development server, run:
