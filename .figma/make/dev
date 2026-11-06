@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+export __VITE_ADDITIONAL_SERVER_ALLOWED_HOSTS=localhost
+export NG_ALLOWED_HOSTS=localhost
+exec ./node_modules/.bin/ng serve --host 0.0.0.0 --port "$PORT"
